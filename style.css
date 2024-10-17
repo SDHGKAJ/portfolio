@@ -30,7 +30,8 @@
 .section-center {
     padding: 4rem 0;
     width: 85vw;
-    margin: 0 auto;
+    margin: 0 auto
+    ;
     max-width: 1170px;
 }
 
@@ -131,6 +132,7 @@ h1, h2, h3 {
 .banner h1 {
     font-size: 1.5em;
     text-align: center;
+    color: #333;
 }
 
 @media screen and (min-width: 768px) {
@@ -159,64 +161,42 @@ h1, h2, h3 {
     background-color: antiquewhite;
 }
 
-/* Box styling for the description */
-.box {
-    background-color: var(--clr-white);
-    color: var(--clr-black);
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid var(--clr-primary);
-    max-width: 600px;
-    margin: 20px auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    font-size: smaller;
+
+.aboutpic img{
+    height: 300px;
+    width: 300px;
+    margin-top: 40px;
+
 }
-
-.about-picture-container {
-    position: relative; /* Add this */
-    left: -120px; /* Move the image left */
-    margin-bottom: 30px;
-    height: 50px;
-    margin-top: 30px;
-}
-
-
-.about-text {
-    font-size: larger;
-    margin-left: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-left: 10px;
-}
-
-.about-text {
-    margin-top: 100px;
-    height: 30px;
-}
-
-.about-me {
-    margin-left: 150px;
-    font-size: larger;
-}
-
-
 .about-box {
-    
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        max-width: 600px; /* Set a max width */
-        margin-top: 40px;
-        width: 100%;
-        margin-left: 20px;
-        margin-right: 50px;
-}    
-
-.about-text, .about-text2 {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    background-color: #fff; /* White background for the box */
+    padding: 20px; /* Inner padding for the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    max-width: 400px; /* Maximum width */
+    margin-top: 100px; /* Increase this value to bring the box down further */
+    margin-left: 20px; /* Left margin */
+    margin-right: 20px; /* Right margin */
+    border: 1px solid #ddd; 
+    color: black;
 }
+
+
+.about-heading {
+    font-size: 1.5rem; /* Larger font size for heading */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #333; /* Darker color for heading */
+    text-align: left; /* Align text to the left */
+}
+
+.about-text {
+    font-size: 1.2rem; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+    color: #555; /* Darker gray color for text */
+    margin: 10px 0; 
+}
+
+
 
 
 @media screen and (min-width: 1024px) {
@@ -277,10 +257,10 @@ h1, h2, h3 {
 
 .about-picture-container {
     margin-bottom: 5px; 
-    height: 400px;  /* Adjust image size if necessary */
+    height: 300px;  /* Adjust image size if necessary */
     width: 300px;
     margin-top: 20px; 
-    margin-left: 200px; /* Adjust as needed */
+    margin-left: 135px; /* Adjust as needed */
 }
 
 .about-box {
@@ -295,26 +275,53 @@ h1, h2, h3 {
 }
 
 @media screen and (min-width: 1024px) {
+    .aboutpic {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        height: 500px;
+    }
+    .aboutpic img{
+        height: 500px;
+        width: 500px;
+    }
+
     .about-picture-container {
-        height: 500px;  /* Larger image for big screens */
-        width: 400px;
-        margin: 20px auto;
-        margin-left: 500px;
-          /* Decrease the space around the image */
+        height: 400px; /* Increase image height */
+        width: 500px; /* Increase image width */
     }
 
     .about-box {
-        max-width: 60%;  
-        margin-bottom: 100px auto;  
-        padding: 30px;  
-        font-size: 1.6rem;  
-        text-align: center;  
-        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);  
+        text-align: center; 
+        max-width: 800px; 
+        margin: 20px auto; 
     }
 
     .about-text, .about-text2 {
-        line-height: 1.8; 
-     
+        font-size: 1.5rem; 
+        padding: 20px;
+        line-height: 2;
+    }
+}
+
+/* Media query for screens larger than or equal to 576px */
+@media screen and (min-width: 576px) {
+    .about-picture-container {
+        height: 700px; /* Adjusted image height */
+        width: 400px; /* Adjusted image width */
+        margin: 20px auto; 
+    }
+
+    .about-box {
+        text-align: center; 
+        max-width: 800px; 
+        margin: 20px auto;
+    }
+
+    .about-text, .about-text2 {
+        font-size: 1.5rem;
+        padding: 20px;
+        line-height: 2; 
     }
 }
 .about-me{
@@ -352,7 +359,7 @@ h1, h2, h3 {
 .centered2 {
     position: absolute;
     top: 30px;
-    left: 180px;
+    left: 140px;
     color: #fff;
     font-size: 1em;
     font-weight: bold;
@@ -371,7 +378,7 @@ h1, h2, h3 {
     }
     
     .centered2 {
-        transform: translate(220%, 30%);
+        transform: translate(250%, 30%);
         
         font-size: 2em;
         
@@ -408,39 +415,41 @@ h1, h2, h3 {
         color: wheat;
     }
 }
-.back3 {
-    position: relative;
-    height: 100px; /* Default height */
-}
-
-.back3 img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; /* Ensures the image covers the container without being distorted */
-}
-
 .centered3 {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 70%;
+    transform: translate(-100%, -900%);
     color: #fff; 
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     text-align: center;
 }
+.back3 img{
+    height: 200px;
+}
+
 
 
 /* Media Query for larger screens, e.g., above 1024px */
-@media (min-width: 1024px) {
-    .back3 {
+@media screen and (min-width: 1024px) {
+    .back3 img{
         height: 300px; /* Increase height to 300px for larger screens */
     }
+    .centered3{
 
-    .centered3 {
-        font-size: 2em; /* Adjust text size */
+    
+
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-160%, -340%);
+        color: #fff; 
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
     }
-}  
+} 
 .sem-1 {
     margin-top: 70px;
     text-align: center;
@@ -473,6 +482,13 @@ h1, h2, h3 {
         width: 48%; /* Each section takes 48% of the container */
         margin: 0; /* Reset margin */
     }
+    .sem-1 img{
+        height: 500px;
+    }
+    .sem-2 img{
+        height: 500px;
+    }
+
 
     .cre-det img {
         height: 120px;
@@ -560,24 +576,168 @@ h1, h2, h3 {
         text-align: center;
         margin-top: 40px;
     }
+    gen img{
+        height: 500px;
+    }
+    .progc img{
+        height: 500px;
+    }
 
     .hack {
         margin-top: 350px;
-        margin-left: 350px;
+        margin-left: 400px;
         
         width: 45%;
         height: 500px;
         
     }
+    .hack img{
+        margin-left: 50px;
+        margin-top: 20px
+    }
+    .hack h1{
+        margin-left: 250px;
+    }
+
     .bad h1{
         margin-left: 70px;
-        margin-top: 50px;
+        margin-top: 50px;  
 
     }
     .bad img{
-        height: 400px;
-        width: 400px;
-        margin-left: 550px;
+        height: 500px;
+        width: 500px;
+        margin-left: 500px;
+        margin-top: 40px;
     }
 }
 
+
+
+
+
+.back4 {
+    position: relative;
+    height: 100px; /* Default height */
+}
+
+.back4 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+
+}
+
+.centered4 {
+    position: absolute;
+    
+    left: 50%;
+    
+    transform: translate(-50%, -150%);
+    color: #fff; 
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+/* Default layout for smaller screens (stacked vertically) */
+.section-center {
+    display: flex;           /* Enables flexbox */
+    flex-direction: column;  /* Stack items vertically by default */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center;     /* Centers the content vertically (if needed) */
+    gap: 20px;               /* Adds space between the boxes */
+    margin-top: 20px;        /* Adds space above the section */
+}
+
+.python-1, .python-2 {
+    text-align: center;      /* Center-aligns the text and images inside each box */
+    width: 100%;             /* Full width on smaller screens */
+}
+
+.python-1 h1, .python-2 h1 {
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+.python-1 img, .python-2 img {
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.python-1 a, .python-2 a {
+    color: black;
+    margin-top: 10px;
+    display: block;          /* Make links appear on a new line */
+}
+.portf img {
+    margin-top: 20px;
+    height: 300px;   /* Increase height */
+    width: 300px;    /* Increase width */
+    margin-left: 10px;
+}
+/* Media query for screens larger than 1024px */
+@media screen and (min-width: 1024px) {
+    /* Center the "Projects" heading */
+    .centered4 h1{
+        text-align: center;  /* Center-align the content */
+        transform: none;     /* Remove the transform effect */
+        margin-right: 30px;
+        margin-top: 30px;
+        transform: translate(-20%, 70%);
+        font-size: 2rem;
+    }
+
+    .centered4 h1 {
+        font-size: 60px;     /* Increase font size for larger screens */
+        margin: 0 auto;      /* Center the heading */
+        color: lightgrey;    /* Keep text color light grey */
+    }
+
+    /* Make python-1 and python-2 inline (side by side) */
+    .section-center {
+        display: flex;              /* Enables Flexbox for horizontal alignment */
+        justify-content: center;    /* Centers python-1 and python-2 in the container */
+        gap: 40px;                  /* Adds space between the two sections */
+        margin-bottom: 50px;        /* Space between python-2 and .portf */
+    }
+
+    .python-1, .python-2 {
+        text-align: center;   /* Center the text and images inside each box */
+        width: 45%;           /* Set the width to 45% so they fit side by side */
+    }
+
+    .python-1 img, .python-2 img {
+        width: 400px;         /* Set consistent image width */
+        height: 400px;        /* Set consistent image height */
+        margin-top: 20px;     /* Add margin at the top */
+    }
+
+    /* Center the .portf section below python-1 and python-2 */
+    .portf {
+        text-align: center;    /* Center all content in the .portf section */
+        margin-top: 30px;      /* Add margin to separate from python-2 */
+    }
+
+    .portf img {
+        width: 400px;          /* Increase image width */
+        height: 400px;         /* Increase image height */
+        margin-top: 30px; 
+        margin-right: 100px;     /* Adjust the top margin */
+    }
+
+    .portf h1 {
+        font-size: 1.8rem;     /* Increase font size */
+        margin-top: 20px;      /* Adjust margin at the top */
+    }
+
+    .portf a {
+        display: inline-block; /* Display the link on a new line */
+        margin-top: 10px;      /* Add margin at the top */
+        color: black;          /* Link color */
+    }
+    .back4 img{
+        height: 200px;
+    }
+}
